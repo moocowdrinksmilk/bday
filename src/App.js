@@ -50,12 +50,13 @@ function App() {
     }, 100)
   }, [])
 
-  if (!moment().isBefore(moment('2021-08-10'))) {
+  if (moment().isBefore(moment('2021-08-10'))) {
     return (
       <div className="bg-black w-screen h-screen flex justify-center items-center">
 
         <div>
           <Lottie
+            height={400}
             options={defaultOptionsLoading} />
           <div className="text-white text-center">
             {time}
