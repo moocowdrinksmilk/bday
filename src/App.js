@@ -50,7 +50,7 @@ function App() {
     }, 100)
   }, [])
 
-  if (moment().isBefore(moment('2021-08-10'))) {
+  if (!moment().isBefore(moment('2021-08-10'))) {
     return (
       <div className="bg-black w-screen h-screen flex justify-center items-center">
 
